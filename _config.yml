@@ -3,7 +3,7 @@ title: Younger Blog
 SEOTitle: 林漾珈的博客 | Younger Blog
 header-img: img/home-bg.jpg
 email: mail@linyangjia.cf
-description: "林漾珈Younger 的个人博客。既知其难犹勉而无憾 | 多角度成长"
+description: "林漾珈Younger 的个人博客。既知其难犹勉之而无憾 | 多角度成长"
 keyword: "林漾珈, Younger, Kayn, @YoungerKayn, 林漾珈的博客, Younger Blog, 博客, 个人网站, 互联网, 单片机, MCU, Python, C"
 url: "https://linyangjia.cf" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
@@ -14,10 +14,10 @@ future: true
 # SNS settings
 RSS: false
 #weibo_username: huxpro
-zhihu_username: Daneel-Olivaw-2
+zhihu_username: daneel-olivaw-2
 github_username: YoungerKayn
 twitter_username: Younger712
-#facebook_username:  huxpro
+facebook_username: seven.younger.73
 #linkedin_username:  firstname-lastname-idxxxx
 
 # Build settings
@@ -59,7 +59,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: Younger
+disqus_username: Younger Lin
 
 # Netease settings
 netease_comment: true
@@ -89,7 +89,4 @@ service-worker: true
 page-mathjax: false
 
 # Friends
-friends:
-  [
-    { title: "Another Younger", href: "http://younger.ink/" },
-  ]
+friends: [{ title: "Another Younger", href: "http://younger.ink/" }]
