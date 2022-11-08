@@ -5,14 +5,13 @@ subtitle: '充当备忘录'
 author: "Younger"
 header-style: text
 header-img: "img/post-bg-configure-of-openwrt.jpg"
-header-mask: 0.2
 tags:
   - 笔记
   - openwrt
 ---
 ## 记Openwrt配置过程
 
-**[本次刷写的固件](https://www.right.com.cn/forum/thread-837205-1-1.html)  **
+###### [本次刷写的固件](https://www.right.com.cn/forum/thread-837205-1-1.html)
 
 1.   ### 上传脚本，解决校园网认证
 
