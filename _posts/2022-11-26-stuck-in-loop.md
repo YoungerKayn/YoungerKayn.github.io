@@ -16,4 +16,4 @@ tags:
 
 \---
 
-![Truth(for me)](/img/post-img-stuck-in-loop.jpg)
+![Truth(for me)](/img/in-post/post-stuck-in-loop/comment-of-Zhihu.jpg)
