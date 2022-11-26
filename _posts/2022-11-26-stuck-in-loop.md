@@ -1,4 +1,4 @@
-\---
+---
 
 layout: post
 
@@ -12,8 +12,8 @@ header-style: text
 
 tags:
 
- \- 键政
+ - 键政
 
-\---
+---
 
 ![Truth(for me)](/img/in-post/post-stuck-in-loop/comment-of-Zhihu.jpg)
