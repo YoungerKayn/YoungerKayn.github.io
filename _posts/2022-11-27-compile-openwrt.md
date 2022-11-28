@@ -211,4 +211,18 @@ tags:
 
               *二次编译可以优先使用多线程，报错会自动使用单线程，仍然报错会单线程执行编译并输出详细日志*
 
+     4.  利用x86架构在Vmware中进行测试
+         *   路由刷机有风险，编译后可先使用x86版本的固件使用vmware测试，平台选择x86，目标image选择vmdk。vmware新建虚拟机使用已存在的磁盘，硬盘一定要选择IDE格式，不要选择SCSI。
+          1.  安装qemu-img
+              ```shell
+              sudo apt-get install qemu-utils
+              ```
+          2.  转换
+              ```shell
+              qemu-img convert -f raw openwrt-x86-generic-combined-ext4.img -O vmdk openwrt-x86-generic-combined-ext4.vmdk
+              ```
+          3.  创建虚拟机
+              将上面转换后的.vmdk文件传输到主机上，在Vmware新建虚拟机
+              按如下步骤操作：
+              自定义 - 稍后安装操作系统 - Linux - 版本 Ubuntu - 选择虚拟机位置 - 处理器核心数 1 - 内存 1024M - 网络类型 NAT - I/O控制器类型 LSI Logic - 磁盘类型 IDE - 使用现有虚拟磁盘 - 选择转换好的.vmdk - 安装并启动
 >   参考：[OpenWrt 固件编译教程](https://blog.csdn.net/qq84395064/article/details/127934147)
