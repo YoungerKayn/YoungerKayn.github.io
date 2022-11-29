@@ -23,15 +23,12 @@ tags:
          先更新apt软件列表
 
          ``` shell
-         sudo sh -c "apt update && apt upgrade -y"
+         sudo apt full-upgrade -y && sudo apt update -y
          ```
 
          通过apt安装依赖
 
-         ``` sh
-         sudo apt update -y
-         sudo apt full-upgrade -y
-         
+         ``` shell
          sudo apt install -y ack antlr3 aria2 asciidoc autoconf automake autopoint binutils bison build-essential \
          bzip2 ccache cmake cpio curl device-tree-compiler fastjar flex gawk gettext gcc-multilib g++-multilib \
          git gperf haveged help2man intltool libc6-dev-i386 libelf-dev libglib2.0-dev libgmp3-dev libltdl-dev \
@@ -39,7 +36,11 @@ tags:
          mkisofs msmtp nano ninja-build p7zip p7zip-full patch pkgconf python2.7 python3 python3-pip libpython3-dev qemu-utils \
          rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip vim wget xmlto xxd zlib1g-dev
          
-         sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch python3 python2.7 unzip zlib1g-dev lib32gcc-s1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler g++-multilib antlr3 gperf wget curl swig rsync
+         sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev \
+         libz-dev patch python3 python2.7 unzip zlib1g-dev lib32gcc-s1 libc6-dev-i386 subversion flex \
+         uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto \
+         qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler \
+         g++-multilib antlr3 gperf wget curl swig rsync
          ```
 
     2.   首次编译
@@ -53,7 +54,7 @@ tags:
 
          通过[这个网址](https://www.ipaddress.com/site/github.com)获取github的IP并修改/etc/hosts如下
 
-         ``` json
+         ``` shell
          IP github.com
          IP www.github.com
          ```
