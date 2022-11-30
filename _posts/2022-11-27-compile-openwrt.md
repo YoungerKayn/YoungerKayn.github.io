@@ -43,8 +43,12 @@ tags:
          g++-multilib antlr3 gperf wget curl swig rsync
          ```
 
-    2.   首次编译
-
+    2.   首次编译  
+    
+         **以下操作需在非root用户进行**  
+         **以下操作需在非root用户进行**  
+         **以下操作需在非root用户进行**  
+           
          设置系统代理并为git设置代理
 
          ``` shell
