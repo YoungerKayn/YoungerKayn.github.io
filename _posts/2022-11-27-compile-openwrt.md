@@ -242,7 +242,7 @@ tags:
               ifconfig br-lan
               ```
          
-              查看l虚拟机NAT模式的子网地址
+              查看虚拟机NAT模式的子网地址
          
               修改 /etc/config/network 配置br-lan的IP地址，使之处于NAT模式所在的子网
          
@@ -250,7 +250,7 @@ tags:
          
           5.  配置外网访问
          
-              在主机中访问web管理界面，密码为空
+              在主机中访问web管理界面，默认密码: password
          
               选择Network -> Interfaces，点击br-lan后面的Edit按钮
          
