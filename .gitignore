@@ -11,3 +11,4 @@ node_modules
 .jekyll-cache
 */.DS_Store
 */*/.DS_Store
+_posts\2022-01-11-3D.markdown
