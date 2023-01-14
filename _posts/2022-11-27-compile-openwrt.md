@@ -249,4 +249,10 @@ tags:
                 此时ip地址已经发生了改变，所以web连接断掉了，在虚拟机中查看br-lan地址，
                 并ping外网，已经可以ping通了
 
-  > 参考：[OpenWrt 固件编译教程](https://blog.csdn.net/qq84395064/article/details/127934147)
+  > 参考：  
+  [使用 GitHub Actions 云编译 OpenWrt](https://p3terx.com/archives/build-openwrt-with-github-actions.html)  
+  [OpenWrt 固件编译教程](https://blog.csdn.net/qq84395064/article/details/127934147)  
+  [零基础编译OpenWrt看这一篇就够了](https://blog.topstalk.com/%E9%9B%B6%E5%9F%BA%E7%A1%80%E7%BC%96%E8%AF%91openwrt%E7%9C%8B%E8%BF%99%E4%B8%80%E7%AF%87%E5%B0%B1%E5%A4%9F%E4%BA%86/)  
+  [openwrt编译教程及踩坑记录](https://zhuanlan.zhihu.com/p/407372263)  
+  [openwrt编译笔记](https://www.right.com.cn/forum/thread-469400-1-1.html)  
+  [从零开始编译OpenWRT(LEDE)固件教程(Lean大源码)x86固件个性化自定义修改](https://ssrvps.org/archives/4968)
