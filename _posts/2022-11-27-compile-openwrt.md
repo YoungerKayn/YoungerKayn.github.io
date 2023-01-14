@@ -18,7 +18,7 @@ tags:
 
 - 基于 Ubuntu22.04.1 桌面版（Vmware）
 
-     1.   安装编译环境依赖
+     1.   #### 安装编译环境依赖
 
            先更新apt软件列表
 
@@ -37,7 +37,7 @@ tags:
            subversion swig texinfo uglifyjs unzip upx upx-ucl vim wget xmlto xxd zlib1g-dev
           ```
 
-     2.   首次编译
+     2.   #### 首次编译
 
            **以下操作需在非root用户进行**
            **以下操作需在非root用户进行**
@@ -111,9 +111,9 @@ tags:
            sed -i 's/192.168.1.1/192.168.7.1/g' package/base-files/files/bin/config_generate
            ```
 
-           *   两种编译方式：
+           *   #### 两种编译方式：
 
-               *   云端编译（仅制作.config文件）
+               *   ##### 云端编译（仅制作.config文件）
 
                1.   配置编译选项
 
@@ -136,7 +136,7 @@ tags:
 
                3.   使用 GitHub Ac­tions 云编译
 
-               *   本地编译
+               *   ##### 本地编译
 
                1.   配置编译选项
 
@@ -160,9 +160,9 @@ tags:
 
                     编译完成后固件输出路径： `/openwrt/bin/targets/`
 
-     3.   二次编译
+     3.   #### 二次编译
 
-           1.   更新本地编译环境
+           1.   ##### 更新本地编译环境
 
                 ```shell
                 # 更新软件列表、升级软件包
@@ -176,7 +176,7 @@ tags:
                 ./scripts/feeds update -a && ./scripts/feeds install -a
                 ```
 
-           2.   清理旧文件
+           2.   ##### 清理旧文件
 
                 ```shell
                 # 删除/bin和/build_dir目录中的文件
@@ -202,7 +202,7 @@ tags:
                 make download -j8 V=s
                 ```
 
-           3.   编译
+           3.   ##### 编译
 
                 ```shell
                 make -j$(nproc) || make -j1 || make -j1 V=s
@@ -210,25 +210,25 @@ tags:
 
                 *二次编译可以优先使用多线程，报错会自动使用单线程，仍然报错会单线程执行编译并输出详细日志*
 
-     4.  利用x86架构在Vmware中进行测试
+     4.  #### 利用x86架构在Vmware中进行测试
            *   路由刷机有风险，编译后可先使用x86版本的固件使用vmware测试，平台选择x86，目标image选择vmdk。vmware新建虚拟机使用已存在的磁盘，硬盘一定要选择IDE格式，不要选择SCSI
 
-            1.  安装qemu-img
+            1.  ##### 安装qemu-img
                 ```shell
                 sudo apt-get install qemu-utils
                 ```
 
-            2.  转换
+            2.  ##### 转换
                 ```shell
                 qemu-img convert -f raw openwrt-x86-generic-combined-ext4.img -O vmdk openwrt-x86-generic-combined-ext4.vmdk
                 ```
 
-            3.  创建虚拟机
+            3.  ##### 创建虚拟机
                 将上面转换后的.vmdk文件传输到主机上，在Vmware新建虚拟机
                 按如下步骤操作：
                 自定义 - 稍后安装操作系统 - Linux - 版本 Ubuntu - 选择虚拟机位置 - 处理器核心数 1 - 内存 1024M - 网络类型 NAT - I/O控制器类型 LSI Logic - 磁盘类型 IDE - 使用现有虚拟磁盘 - 选择转换好的.vmdk - 安装并启动
 
-            4.  修改内网配置
+            4.  ##### 修改内网配置
 
                 查看IP地址
 
@@ -242,7 +242,7 @@ tags:
 
                 重启虚拟机后主机应可以ping通虚拟机
 
-            5.  配置外网访问
+            5.  ##### 配置外网访问
 
                 在主机中访问web管理界面，默认密码: password
 
