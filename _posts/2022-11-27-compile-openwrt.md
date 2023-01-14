@@ -18,7 +18,7 @@ tags:
 
 - 基于 Ubuntu22.04.1 桌面版（Vmware）
 
-      1.   安装编译环境依赖
+     1.   安装编译环境依赖
 
            先更新apt软件列表
 
@@ -37,7 +37,7 @@ tags:
            subversion swig texinfo uglifyjs unzip upx upx-ucl vim wget xmlto xxd zlib1g-dev
           ```
 
-      2.   首次编译
+     2.   首次编译
 
            **以下操作需在非root用户进行**
            **以下操作需在非root用户进行**
@@ -160,7 +160,7 @@ tags:
 
                     编译完成后固件输出路径： `/openwrt/bin/targets/`
 
-      3.   二次编译
+     3.   二次编译
 
            1.   更新本地编译环境
 
@@ -210,7 +210,7 @@ tags:
 
                 *二次编译可以优先使用多线程，报错会自动使用单线程，仍然报错会单线程执行编译并输出详细日志*
 
-       4.  利用x86架构在Vmware中进行测试
+     4.  利用x86架构在Vmware中进行测试
            *   路由刷机有风险，编译后可先使用x86版本的固件使用vmware测试，平台选择x86，目标image选择vmdk。vmware新建虚拟机使用已存在的磁盘，硬盘一定要选择IDE格式，不要选择SCSI
 
             1.  安装qemu-img
