@@ -6,17 +6,23 @@
 
 **Openwrt building config maker / Openwrt编译配置生成工具**
 
+------
+
 ## Intro / 说明
 
 这个项目通过Github Actions来构建你的Openwrt编译配置文件(.config)，使你免受自行搭建编译环境的痛苦，并可以配合 [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt) 等在线编译项目，在完全不搭建编译环境的情况下编译自己的固件。
 
 By this project, you can make your own Openwrt build config file by the GitHub Action, save your time from setting up the build environment.
 
+------
+
 ## Usage / 用法
-<details>
-<summary>English</summary>
+------
+
+**English**
 
 ## Openwrt building config maker
+
  Make your own Openwrt build config file by the GitHub Action, save your time from setting up the build environment.
 
 ### Usage
@@ -49,9 +55,10 @@ You can change your firmware's default IP, hostname, theme, add/remove packages 
 3. **custom feeds source**  
 You can add your own feeds by modifying `./github/feeds.conf.default`. For example, add `src-git luci https://github.com/coolsnowwolf/luci` to use the packages of [LuCI](https://github.com/coolsnowwolf/luci)
 
-<details>
-<summary>中文</summary>
-    
+------
+
+**中文**
+
 
 ## Openwrt编译配置生成工具
  通过Github Actions来构建你的Openwrt编译配置文件(.config)，免受自行搭建编译环境的痛苦，并可以配合 [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt) 等在线编译项目，在完全不搭建编译环境的情况下编译自己的固件。
@@ -78,15 +85,16 @@ You can add your own feeds by modifying `./github/feeds.conf.default`. For examp
 
 ### 进阶用法
 1. **自定义源码**  
-本仓库默认使用[LEDE](https://github.com/coolsnowwolf/lede)的源码进行环境搭建，你可以通过修改 `./github/workflows/make-config.yml` 中的相关变量来修改代码源
-
+  本仓库默认使用[LEDE](https://github.com/coolsnowwolf/lede)的源码进行环境搭建，你可以通过修改 `./github/workflows/make-config.yml` 中的相关变量来修改代码源
 2. **自定义固件**  
-你可以通过在 `./github/diy-part1.sh` 或 `./github/diy-part2.sh` 中添加自定义命令来让Actions在 `make menuconfig` 前或后执行，从而修改固件的默认 IP、主机名、主题、添加 / 删除软件包等
-
+  你可以通过在 `./github/diy-part1.sh` 或 `./github/diy-part2.sh` 中添加自定义命令来让Actions在 `make menuconfig` 前或后执行，从而修改固件的默认 IP、主机名、主题、添加 / 删除软件包等
 3. **自定义软件源**  
-如果你需要添加自定义的软件源，你可以修改`./github/feeds.conf.default`。例如，在该文件中添加 `src-git luci https://github.com/coolsnowwolf/luci` 以使用[LuCI](https://github.com/coolsnowwolf/luci)中的软件包
+  如果你需要添加自定义的软件源，你可以修改`./github/feeds.conf.default`。例如，在该文件中添加 `src-git luci https://github.com/coolsnowwolf/luci` 以使用[LuCI](https://github.com/coolsnowwolf/luci)中的软件包
+
+------
 
 ## Credit / 鸣谢
+
 - [Microsoft Azure](https://azure.microsoft.com)
 - [GitHub Actions](https://github.com/features/actions)
 - [OpenWrt](https://github.com/openwrt/openwrt)
