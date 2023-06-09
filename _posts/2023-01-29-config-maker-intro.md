@@ -1,3 +1,22 @@
+---
+layout: post
+
+title: "Config Maker 介绍"
+
+subtitle: "从搭建编译环境中解放"
+
+author: "Younger"
+
+header-style: text
+
+tags:
+  - 笔记
+  - openwrt
+  - compile
+  - linux
+  - 嵌入式
+---
+
 #### 这是我Github中的一个项目的介绍及使用方式
 
 # [Config-Maker](https://github.com/YoungerKayn/Config-Maker)

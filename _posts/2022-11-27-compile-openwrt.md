@@ -12,6 +12,8 @@ header-style: text
 tags:
   - 笔记
   - openwrt
+  - linux
+  - 嵌入式
 ---
 
 ## Openwrt 固件编译
