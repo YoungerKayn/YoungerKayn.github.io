@@ -74,7 +74,7 @@ netease_comment: true
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "多角度成长 <br> Student @ SZU <br> 林（Lem） 漾（Yeung） 珈（Ga）"
+sidebar-about-description: "多角度成长 <br> Student @ SZU"
 sidebar-avatar: https://github.com/YoungerKayn.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
