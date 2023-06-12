@@ -35,41 +35,57 @@ By this project, you can make your own Openwrt build config file by the GitHub A
 ## Usage / 用法
   
   
-**English**
-  
+<details>
+<summary>English</summary>
+
+
 ## Openwrt building config maker
 
  Make your own Openwrt build config file by the GitHub Action, save your time from setting up the build environment.
 
 ### Usage
+
 - Click [HERE](https://github.com/YoungerKayn/Config-Maker/generate) to create a new repository
+
 - Select `Make Config File` on the Actions page
+
 - Click the `Run workflow` button
+
 - Refresh the page and click the lastest `Make Config File` action to access its log
+
 - Click on the `build` job on the left sidebar
+
 - Wait for the `SSH connection to Actions` job to be executed at this page, and information like the following will appear:
+
     ``` shell
     To connect to this session copy and paste the following into a terminal or browser:
     CLI: ssh McuGhq5PvktJyr53WHFsyjLMW@nyc1.tmate.io
     URL: https://tmate.io/t/McuGhq5PvktJyr53WHFsyjLMW
     TIPS: Run 'touch /tmp/continue' to continue to the next step.
     ```
+
     then follow the tips to SSH to Actions. (If you are using a web terminal and get a black screen, just press `Ctrl+C`)
+
 - Type `cd openwrt && make menuconfig` in the terminal to start building your .config file
+
 - After you finishing your work, type `touch /tmp/continue` in the terminal then exit the terminal, the rest of the work will be done automatically
+
 - ~~Star this repo, then it will be done faster~~
+
 - After all the work is done, you will see `OpenWrt_config` in `Artifacts` on the Action `Summary` page, just click and download it
 
 ### Advanced Usage
 
 1. **custom source code**  
-This repo will use [LEDE](https://github.com/coolsnowwolf/lede)'s source code to build the environment by default, you can change it in file `.github/workflows/make-config.yml` 
+    This repo will use [LEDE](https://github.com/coolsnowwolf/lede)'s source code to build the environment by default, you can change it in file `.github/workflows/make-config.yml` 
 
 2. **custom fireware envs**  
-You can change your firmware's default IP, hostname, theme, add/remove packages and so on by adding command in `./github/diy-part1.sh` and `./github/diy-part2.sh`
+    You can change your firmware's default IP, hostname, theme, add/remove packages and so on by adding command in `./github/diy-part1.sh` and `./github/diy-part2.sh`
 
 3. **custom feeds source**  
-You can add your own feeds by modifying `./github/feeds.conf.default`. For example, add `src-git luci https://github.com/coolsnowwolf/luci` to use the packages of [LuCI](https://github.com/coolsnowwolf/luci)
+    You can add your own feeds by modifying `./github/feeds.conf.default`. For example, add `src-git luci https://github.com/coolsnowwolf/luci` to use the packages of [LuCI](https://github.com/coolsnowwolf/luci)
+
+</details>
   
   
 **中文**
