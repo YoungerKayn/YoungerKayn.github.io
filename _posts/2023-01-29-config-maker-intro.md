@@ -37,8 +37,7 @@ By this project, you can make your own Openwrt build config file by the GitHub A
   
 <details>
 <summary>English</summary>
-
-
+<pre><code>
 ## Openwrt building config maker
 
  Make your own Openwrt build config file by the GitHub Action, save your time from setting up the build environment.
@@ -84,7 +83,7 @@ By this project, you can make your own Openwrt build config file by the GitHub A
 
 3. **custom feeds source**  
     You can add your own feeds by modifying `./github/feeds.conf.default`. For example, add `src-git luci https://github.com/coolsnowwolf/luci` to use the packages of [LuCI](https://github.com/coolsnowwolf/luci)
-
+</code></pre>
 </details>
   
   
