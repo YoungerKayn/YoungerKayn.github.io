@@ -25,7 +25,7 @@ tags:
 
 **Openwrt building config maker / Openwrt编译配置生成工具**
 
-------
+---
 
 ## Intro / 说明
 
@@ -33,12 +33,15 @@ tags:
 
 By this project, you can make your own Openwrt build config file by the GitHub Action, save your time from setting up the build environment.
 
-------
+---
 
 ## Usage / 用法
-------
 
+ 
+ 
 **English**
+
+---
 
 ## Openwrt building config maker
 
@@ -74,10 +77,11 @@ You can change your firmware's default IP, hostname, theme, add/remove packages 
 3. **custom feeds source**  
 You can add your own feeds by modifying `./github/feeds.conf.default`. For example, add `src-git luci https://github.com/coolsnowwolf/luci` to use the packages of [LuCI](https://github.com/coolsnowwolf/luci)
 
-------
-
+ 
+ 
 **中文**
 
+---
 
 ## Openwrt编译配置生成工具
  通过Github Actions来构建你的Openwrt编译配置文件(.config)，免受自行搭建编译环境的痛苦，并可以配合 [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt) 等在线编译项目，在完全不搭建编译环境的情况下编译自己的固件。
@@ -110,7 +114,7 @@ You can add your own feeds by modifying `./github/feeds.conf.default`. For examp
 3. **自定义软件源**  
   如果你需要添加自定义的软件源，你可以修改`./github/feeds.conf.default`。例如，在该文件中添加 `src-git luci https://github.com/coolsnowwolf/luci` 以使用[LuCI](https://github.com/coolsnowwolf/luci)中的软件包
 
-------
+---
 
 ## Credit / 鸣谢
 
