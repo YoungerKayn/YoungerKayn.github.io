@@ -38,7 +38,7 @@ By this project, you can make your own Openwrt build config file by the GitHub A
 <details>
 <summary>English</summary>
 
-```
+``` markdown
 ## Openwrt building config maker
 
  Make your own Openwrt build config file by the GitHub Action, save your time from setting up the build environment.
