@@ -59,7 +59,15 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: linyangjia
+# disqus_username: linyangjia
+
+# Gittalk settings
+gittalk_enable: true
+gittalk_client_ID: 0b848af3684dc62353da
+gittalk_client_secret: 5b41af6b38cbd386ad9446d6ce4b7d82b2066444
+gittalk_repo: YoungerKayn.github.io
+gittalk_owner: YoungerKayn
+gittalk_admin: YoungerKayn
 
 # Netease settings
 netease_comment: false
