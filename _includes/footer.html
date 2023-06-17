@@ -144,6 +144,18 @@ uptime_span.innerHTML="Blog Uptime: "+A+"天"+B+"小时"+C+"分"+D+"秒"}show_up
 </script>
 {% endif %}
 
+<! -- Google Tags Manager -->
+{%if site.gt_id %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{site.gt_id}}"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{site.gt_id}}');
+</script>
+{% endif %}
 
 <!-- Baidu Tongji -->
 {% if site.ba_track_id %}

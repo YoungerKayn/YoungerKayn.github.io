@@ -80,6 +80,9 @@ netease_comment: false
 ga_track_id: "UA-245781122-1" # Format: UA-xxxxxx-xx
 ga_domain: younger.eu.org
 
+# Google Tags Manager
+gt_id: "G-G24HFJ6TEY" # Format: G-Gxxxxxxx
+
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "多角度成长 <br> Student @ SZU"
