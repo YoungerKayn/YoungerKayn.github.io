@@ -126,7 +126,7 @@ uptime_span.innerHTML="Blog Uptime: "+A+"天"+B+"小时"+C+"分"+D+"秒"}show_up
 
 <!-- Google Analytics -->
 {% if site.ga_track_id %}
-<script>
+<!-- <script>
     // dynamic User by Hux
     var _gaId = '{{ site.ga_track_id }}';
     var _gaDomain = '{{ site.ga_domain }}';
@@ -141,19 +141,28 @@ uptime_span.innerHTML="Blog Uptime: "+A+"天"+B+"小时"+C+"分"+D+"秒"}show_up
 
     ga('create', _gaId, _gaDomain);
     ga('send', 'pageview');
+</script> -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_track_id }}"></script>
+<script>
+    // gtag.js
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ site.ga_track_id }}');
 </script>
 {% endif %}
 
 <! -- Google Tags Manager -->
 {%if site.gt_id %}
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{site.gt_id}}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gt_id }}"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', '{{site.gt_id}}');
+    gtag('config', '{{ site.gt_id }}');
 </script>
 {% endif %}
 
