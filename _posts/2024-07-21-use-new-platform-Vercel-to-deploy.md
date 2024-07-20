@@ -18,10 +18,10 @@ tags:
   - deploy
 ---
 
-# Github Pages 在中国大陆的访问速度较慢，并且在博客更新后，部署速度很慢，对于静态资源的更新不利。
-# Vercel 拥有更好的访问体验已经更快的部署速度，因此启用Pages而使用Vercel。
+### Github Pages 在中国大陆的访问速度较慢，并且在博客更新后，部署速度很慢，对于静态资源的更新不利。
+### Vercel 拥有更好的访问体验已经更快的部署速度，因此启用Pages而使用Vercel。
 
-## 使用Vercel部署huxpro.github.io的步骤很简单，注册账号后，通过Github导入对应的项目，直接部署即可。
+ 使用Vercel部署huxpro.github.io的步骤很简单，注册账号后，通过Github导入对应的项目，直接部署即可。
 
 **Openwrt building config maker / Openwrt编译配置生成工具**
 
