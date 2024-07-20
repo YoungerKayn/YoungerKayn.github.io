@@ -21,11 +21,11 @@ tags:
 ### Github Pages 在中国大陆的访问速度较慢，并且在博客更新后，部署速度很慢，对于静态资源的更新不利。
 ### Vercel 拥有更好的访问体验已经更快的部署速度，因此启用Pages而使用Vercel。
 
- 使用Vercel部署huxpro.github.io的步骤很简单，注册账号后，通过Github导入对应的项目，直接部署即可。
+ 使用Vercel部署huxpro.github.io的步骤很简单，注册账号后，通过Github导入对应的项目，直接部署即可。  
 
- 需要注意的是，将域名绑定到在Vercel部署的页面时，CNAME应选择 cname-china.vercel-dns.com 而非 cname.vercel-dns.com，后者已经被墙。
- A记录需要增加三条：76.76.21.21、76.76.21.98、76.223.126.88。
- 若使用cloudflare作域名解析，需要SSL/TLS加密模式设置为 完全 ，否则会因为过多重定向而无法访问网页。
+ 需要注意的是，将域名绑定到在Vercel部署的页面时，CNAME应选择 cname-china.vercel-dns.com 而非 cname.vercel-dns.com，后者已经被墙。  
+ A记录需要增加三条：76.76.21.21、76.76.21.98、76.223.126.88。  
+ 若使用cloudflare作域名解析，需要SSL/TLS加密模式设置为 完全 ，否则会因为过多重定向而无法访问网页。  
 
 **Openwrt building config maker / Openwrt编译配置生成工具**
 
