@@ -1,7 +1,7 @@
 # Site settings
 title: Younger Blog
 SEOTitle: 林漾珈的博客 | Younger Blog
-header-img: img/home-bg-younger.jpg
+header-img: img/home-bg-younger.webp
 email: mail@younger.eu.org
 description: "林漾珈Younger 的个人博客。既知其难犹勉之而无憾 | 多角度成长"
 keyword: "林漾珈, Younger, Kayn, @YoungerKayn, 林漾珈的博客, Younger Blog, 博客, 个人网站, 互联网, 单片机, MCU, Python, C, Java"
@@ -80,6 +80,9 @@ netease_comment: false
 ga_track_id: "UA-245781122-1" # Format: UA-xxxxxx-xx
 ga_domain: younger.eu.org
 
+# Google Tags Manager
+gt_id: "G-G24HFJ6TEY" # Format: G-Gxxxxxxx
+
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "多角度成长 <br> Student @ SZU"
@@ -91,11 +94,12 @@ featured-condition-size: 1 # A tag will be featured if the size of it is more th
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
-service-worker: true
+service-worker: false
 
 # MathJax rendering for layout:page (e.g. post preview)
 page-mathjax: false
 
 # Friends
-friends: [{ title: "No Links yet, click to ask me to add your website", href: "mailto://mail@younger.eu.org" },
+friends: [{ title: "No Links yet :<", href: "#" },
+          { title: "Ask to add your website", href: "mailto://mail@younger.eu.org?subject=Make a friend"},
           { title: "Younger's Drive", href: "https://cloud.szu.asia"}]

@@ -112,7 +112,7 @@
 <script type="text/javascript">function show_uptime(){window.setTimeout("show_uptime()",1000);X=new Date("10/16/2022 14:54:07");
 Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;
 a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);
-uptime_span.innerHTML="(This is invisible to those who are stupid or incompetent)"+"Blog Uptime: "+A+"天"+B+"小时"+C+"分"+D+"秒"}show_uptime();</script>
+uptime_span.innerHTML="Blog Uptime: "+A+"天"+B+"小时"+C+"分"+D+"秒"}show_uptime();</script>
 {% endif %}
 
 <!--fastClick.js -->
@@ -123,27 +123,31 @@ uptime_span.innerHTML="(This is invisible to those who are stupid or incompetent
     })
 </script>
 
-
 <!-- Google Analytics -->
 {% if site.ga_track_id %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_track_id }}"></script>
 <script>
-    // dynamic User by Hux
-    var _gaId = '{{ site.ga_track_id }}';
-    var _gaDomain = '{{ site.ga_domain }}';
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    // Originial
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', _gaId, _gaDomain);
-    ga('send', 'pageview');
+    gtag('config', '{{ site.ga_track_id }}');
 </script>
 {% endif %}
 
+<!-- Google Analytics 4 -->
+{%if site.gt_id %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gt_id }}"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ site.gt_id }}');
+</script>
+{% endif %}
 
 <!-- Baidu Tongji -->
 {% if site.ba_track_id %}
